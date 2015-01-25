@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}- Home{% endblock %}
+
+{% block body %}
+  {% include 'partials/navigation.html.twig' %}
+  {% include 'partials/header.html.twig' %}
+
+  <div class="container">
+    <h1 class="text-center">Populaire evenementen</h1>
+
+      {% for thing in things %}
+        {% include 'partials/thing.html.twig' with {'variant': 'list-item-medium'} %}
+      {% endfor %}
+      
+  </div>
+
+  <hr />
+
+  {% include 'partials/explanation.html.twig' %}
+  {% include 'partials/footer.html.twig' %}
+{% endblock %}

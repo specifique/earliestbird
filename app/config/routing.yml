@@ -1,0 +1,21 @@
+app:
+  resource: @AppBundle/Controller/
+  type:     annotation
+
+homepage:
+  path:     /
+  defaults: {_controller: AppBundle:Default:index}
+
+#   Things (called events on the frontend)
+# ------------------------------------------
+thing-create:
+  path:     /event
+  defaults: {_controller: AppBundle:Thing:index}
+
+thing-show:
+  path:     /event/{id}
+  defaults: {_controller: AppBundle:Thing:show}
+
+thing-create:
+  path:     /events/create
+  defaults: {_controller: AppBundle:Thing:create}

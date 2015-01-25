@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}- Home{% endblock %}
+
+{% block body %}
+  {{ include('partials/navigation.html.twig') }}
+  {{ include('partials/header-small.html.twig') }}
+
+  <div class="container">
+    <h1 class="text-center">{{ thing.name }}</h1>
+    <p class="lead">
+      {% if thing.startdate == thing.enddate %}
+      Dit evenement vindt plaats op {{ thing.startdate|date('d-m-Y') }}. 
+      {% else %}
+      Dit evenement vindt plaats van {{ thing.startdate|date('d-m-Y') }} t/m {{ thing.enddate|date('d-m-Y') }}. 
+      {% endif %}
+      De kaartverkoop start op {{ thing.availabledate|date('d-m-Y') }} om {{ thing.availabledate|date('H:m') }}.
+    </p>
+    
+  </div>
+
+  {{ include('partials/footer.html.twig') }}
+{% endblock %}

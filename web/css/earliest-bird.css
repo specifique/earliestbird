@@ -1,0 +1,159 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
+
+html {
+  background-color: #18171b;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  font-family: "Helvetica", "Open Sans", "Arial", sans-serif;
+  color: black;
+}
+h1 {
+  text-align: center;
+  font-weight: 300;
+}
+h2 {
+  font-weight: 300;
+}
+a {
+  color: #ff7519;
+}
+
+/*
+ * Fancy horizontal rule
+ */
+hr {
+  height: 0em;
+  margin: 3em 0 2em 0;
+}
+
+hr::after {
+  content: "~";
+  font-family: serif;
+  display: inline-block;
+  line-height: 1;
+  position: relative;
+  top: -100%;
+  color: #e6e6e6;
+  font-size: 4em;
+  left: 50%;
+  width: 60px;
+  margin-top: -0.5em;
+  margin-left: -30px;
+  background-color: white;
+  text-align: center;
+}
+
+
+/*
+ *   Navigation
+ * --------------
+ */
+nav.navbar {
+  margin-bottom: 0;
+  background-image: linear-gradient(to bottom, #222 0%, #000 100%)
+}
+
+/*
+ *   Header
+ * ----------
+ */
+div.header-container {
+  height: 75vh;
+  width: 100vw;
+  background-image: url("http://www.thenoisegate.com/wp-content/uploads/2014/04/sonar.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: table-cell;
+  vertical-align: middle;
+  color: white;
+  padding-top: 3em;
+  padding-bottom: 3em;
+  box-shadow: inset 0px 0px 60px #000;
+  margin-bottom: 4em;
+}
+div.header-small {
+  height: 4em;
+}
+div.header-big > header {
+  display: inline-block;
+  width: 100%;
+  background-color: rgba(0,0,0,0.5);
+  text-align: center;
+}
+header h1 {
+  font-family: Arial;
+  text-shadow: 0 0 0.1em rgba(0,0,0,0.35);
+  font-size: 4em;
+  font-weight: 700;
+}
+
+/*
+ *   Events
+ * ----------
+ */
+.event-demand-item img {
+  height: 5em;
+  margin-right: 1em;
+  float: left;
+}
+.event-demand p {
+  margin-top: 0.5em;
+}
+
+/*
+ *   Explanation
+ * ---------------
+ */
+.explanation ol {
+  padding-left: 0;
+  list-style-type: none;
+}
+.explanation ol li {
+  display: inline-block;
+  width: 100%;
+  padding-left: 60px;
+}
+.explanation ol .explanation-list-number {
+  display: block;
+  font-size: 4em;
+  line-height: 1.15;
+  color: #ffd1b3;
+  padding-right: 0.2em;
+  height: 100%;
+  float: left;
+  margin-left: -60px;
+}
+.explanation ol h4 {
+  vertical-align: text-top;
+}
+
+/**
+ *   Footer
+ * ----------
+ */
+footer {
+  display: block;
+  color: #f5f5f5;
+  font-size: 0.9em;
+  width: 100%;
+  background-color: #18171b;
+  padding-top: 2em;
+  padding-bottom: 4em;
+}
+footer dl dd {
+  margin-left: 10px;
+}
+footer a:link, footer a:hover, footer a:active, footer a:visited {
+  color: inherit;
+}
+/*
+ * Style overrides
+ */
+.btn.btn-empty {
+  background: none;
+  border-color: #333;
+  text-shadow: none;
+  box-shadow: none;
+}

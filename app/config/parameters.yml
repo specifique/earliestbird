@@ -1,0 +1,14 @@
+# This file is auto-generated during the composer install
+parameters:
+    database_driver: pdo_mysql
+    database_host: 127.0.01
+    database_port: 3306
+    database_name: deb60225n2_earliestbird
+    database_user: deb60225n2_db
+    database_password: DK6r23SzKtkC5xWd
+    mailer_transport: smtp
+    mailer_host: 127.0.0.1
+    mailer_user: null
+    mailer_password: null
+    locale: en
+    secret: 3dda240e5d30b63051852be4730da59d29e4813e
